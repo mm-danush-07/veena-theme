@@ -37,8 +37,7 @@
         {%- if mobileImage.width >= 2000 -%}{{ mobileImage | image_url: width: 2000 }} 2000w,{%- endif -%}
         {%- if mobileImage.width >= 3000 -%}{{ mobileImage | image_url: width: 3000 }} 3000w,{%- endif -%}
         {%- if mobileImage.width >= 3840 -%}{{ mobileImage | image_url: width: 3840 }} 3840w,{%- endif -%}
-        {{ mobileImage | image_url }} {{ mobileImage.width }}w
-      "
+        {{ mobileImage | image_url }} {{ mobileImage.width }}"
       sizes="{{ mobileSize | default: '100vw' }}"
       width="{{ mobileImage.width }}"
       height="{{ mobileImage.width | divided_by: mobileImage.aspect_ratio | round }}"
@@ -58,8 +57,7 @@
       {%- if desktopImage.width >= 2000 -%}{{ desktopImage | image_url: width: 2000 }} 2000w,{%- endif -%}
       {%- if desktopImage.width >= 3000 -%}{{ desktopImage | image_url: width: 3000 }} 3000w,{%- endif -%}
       {%- if desktopImage.width >= 3840 -%}{{ desktopImage | image_url: width: 3840 }} 3840w,{%- endif -%}
-      {{ desktopImage | image_url }} {{ desktopImage.width }}w
-    "
+      {{ desktopImage | image_url }} {{ desktopImage.width }}"
     sizes="{{ desktopSize | default: '100vw' }}"
     width="{{ desktopImage.width }}"
     height="{{ desktopImage.width | divided_by: desktopImage.aspect_ratio | round }}"

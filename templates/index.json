@@ -1,46 +1,69 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "slideshow_with_text_JUVc4f": {
+      "type": "slideshow-with-text",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "slider_elements_bQG3iA": {
+          "type": "slider-elements",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
+            "image": "shopify:\/\/shop_images\/1.webp",
+            "block_badge_text": "Trendy Classics",
+            "block_description_text": "<p>Elevate your wardrobe with our <a href=\"\/collections\/all\" title=\"All products\">limited-time<\/a> fashion offer!<\/p>",
+            "block_button_text": "Shop Now",
+            "button_color_text": "#000000",
+            "button_bg_color": "#ffffff",
+            "block_button_link": "",
+            "text_alignment": "center",
+            "vertical_alignment": "center",
+            "horizantal_alignment": "center"
           }
         },
-        "button": {
-          "type": "buttons",
+        "slider_elements_gJbfeh": {
+          "type": "slider-elements",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "image": "shopify:\/\/shop_images\/4.webp",
+            "block_badge_text": "Trendy Classics",
+            "block_description_text": "<p>Elevate your wardrobe with our limited-time fashion offer!<\/p>",
+            "block_button_text": "Shop Now",
+            "button_color_text": "#000000",
+            "button_bg_color": "#ffffff",
+            "block_button_link": "",
+            "text_alignment": "start",
+            "vertical_alignment": "center",
+            "horizantal_alignment": "start"
+          }
+        },
+        "slider_elements_JqF6G7": {
+          "type": "slider-elements",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3.webp",
+            "block_badge_text": "Modern Elegance",
+            "block_description_text": "<p>Step into the World of Style with the Latest Fashion Trends Unveiled!<\/p>",
+            "block_button_text": "Explore More",
+            "button_color_text": "#000000",
+            "button_bg_color": "#ffffff",
+            "block_button_link": "",
+            "text_alignment": "center",
+            "vertical_alignment": "center",
+            "horizantal_alignment": "start"
           }
         }
       },
       "block_order": [
-        "heading",
-        "button"
+        "slider_elements_bQG3iA",
+        "slider_elements_gJbfeh",
+        "slider_elements_JqF6G7"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "autoplay": true,
+        "show_pagination": true,
+        "autoplay_duration": 3000
       }
     }
   },
   "order": [
-    "image_banner"
+    "slideshow_with_text_JUVc4f"
   ]
 }
