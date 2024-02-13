@@ -344,7 +344,6 @@ h5, .h5 {
 h6, .h6 {
   color: rgba(var(--color-foreground), 0.75);
 }
-
 blockquote {
   font-style: italic;
   color: rgba(var(--color-foreground), 0.75);
