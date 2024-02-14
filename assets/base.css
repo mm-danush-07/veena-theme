@@ -3521,3 +3521,20 @@ details-disclosure > details {
     --border-offset: 0px; /* Prevent the border from growing on buttons when this effect is on. */
   }
 }
+.bnr_caption {
+  padding: 0;
+  font-size: 14px;
+}
+.bnr_caption.out-text {
+  border: 1px solid white;
+  border-radius: 31px;
+  padding: 0 13px 0 30px;
+  display: inline-block;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  vertical-align: middle;
+  word-break: break-word;
+}
+.bnr_caption.out-text li{
+  list-style: circle;
+}

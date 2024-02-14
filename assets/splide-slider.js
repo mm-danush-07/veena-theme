@@ -1,15 +1,13 @@
 class SplideSlider extends HTMLElement {
   constructor() {
     super();
-    this.splideEl = this.querySelector(".splide");
-    this.options = JSON.parse(this.querySelector("script").textContent);
-
-    console.log(this.options);
+    this.splideElement = this.querySelector(".splide");
+    this.options = JSON.parse(this.splideElement.dataset.sliderSettings);
     this.mountSplider();
   }
 
   mountSplider() {
-    new Splide(this.splideEl, this.options).mount();
+    new Splide(this.splideElement, this.options).mount();
   }
 }
 

@@ -11,7 +11,7 @@
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
-  }
+   }
    {% for block in section.blocks %}
       .slideshow-with-text__textContent-inner-{{block.id}}{
           text-align: {{ block.settings.text_alignment }};
@@ -20,80 +20,107 @@
        
         background-color:{{ block.settings.button_bg_color }}
     }  
-.slideshow-with-text__textContent-{{ block.id }}{
-    
+    .slideshow-with-text__textContent-{{ block.id }}{
         justify-content: {{ block.settings.horizantal_alignment }};
         align-items:  {{ block.settings.vertical_alignment }};
-}
+    }
     {% endfor %}
 
 {% endstyle %}
 
+  {% capture sliderSettings %}
+            {
+               "type": "loop",
+               "perPage": 1,
+               "arrows": true,
+               "pagination": {{ section.settings.show_pagination }},
+               "perMove": 1,
+               "interval": {{ section.settings.autoplay_duration }},
+               "autoplay": {{ section.settings.autoplay }}
+            }
+  {% endcapture %}
+
 <div class="slideshow-with-text padding-{{ section.id }}">
-<div class="page-width">
-    <slide-slider class="slideshow-with-text__wrapper">
-    <script>
-    {
-        "type": "loop",
-        "perPage": 1,
-        "arrows": true,
-        "pagination": {{section.settings.show_pagination }},
-        "perMove": 1,
-        "interval": {{ section.settings.autoplay_duration }},
-        "autoplay": {{ section.settings.autoplay }}
-    }
-    </script>
-<section class="splide" aria-label="Splide Basic HTML Example">
-    <div class="splide__track splide__wrapper">
-        <ul class="splide__list">
-        {% for block in section.blocks %}
-            <li class="splide__slide">
-                {%- if block.settings.image != blank or block.settings.image_mobile != blank -%}
-                    {%
-                        render 'responsive-picture',
-                        desktopImage: block.settings.image,
-                        mobileImage: block.settings.image_mobile
-                    %}
-                {%- endif -%}
-                <div class="slideshow-with-text__textContent slideshow-with-text__textContent-{{ block.id }}">
-                    <div class="slideshow-with-text__textContent-inner slideshow-with-text__textContent-inner-{{ block.id }}">
-                {% if block.settings.block_badge_text != blank %}
-                        <ul class="bnr_caption inline-richtext out-text ">
-                            <li>{{ block.settings.block_badge_text }}</li>
-                            </ul>
-                    {% endif %}
-                    {% if block.settings.block_description_text != blank %}
-                        
-                        <h2 class="h1 slideshow-with-text__textContent-desc">{{ block.settings.block_description_text }} </h2>
-                    {% endif %}
-                    {% if  block.settings.block_button_text != blank %}
-                     <a class="slideshow-with-text__button-{{ block.id }} button"
-                        href=" {{ block.settings.button_link }}"
-                     >
-                        <h2 class="h2 slideshow-with-text__button">{{ block.settings.block_button_text }}</h2> 
-                     </a>
-                    {% endif %}
-                    </div>
-                </div>
-            </li>
-            {% else %}
-                {% for i in (1..3) %}
-                    <li class="splide__slide">
-                    {{ 'product-' | append: i | placeholder_svg_tag }}
-                    </li>
-                {% endfor %}
-        {% endfor %}
-        </ul>
-    </div>
-    </section>
-</slide-slider>
-</div>
+   <div class="page-width">
+      <slide-slider class="slideshow-with-text__wrapper">
+         <section class="splide" data-slider-settings='{{ sliderSettings }}' aria-label="Slide Show Content">
+            <div class="splide__track splide__wrapper">
+               <ul class="splide__list">
+                  {% for block in section.blocks %}
+                  <li class="splide__slide">
+                      <div class="splide__wrapper-image">
+                        {%- if block.settings.image != blank or block.settings.image_mobile != blank -%}
+                         {%
+                         render 'responsive-picture',
+                         desktopImage: block.settings.image,
+                         mobileImage: block.settings.image_mobile
+                         %}
+                         {%- endif -%}
+                      </div>
+                     <div class="slideshow-with-text__textContent slideshow-with-text__textContent-{{ block.id }}">
+                        <div class="slideshow-with-text__textContent-inner slideshow-with-text__textContent-inner-{{ block.id }}">
+                           {% if block.settings.block_badge_text != blank %}
+                           <ul class="bnr_caption inline-richtext out-text ">
+                              <li>{{ block.settings.block_badge_text }}</li>
+                           </ul>
+                           {% endif %}
+                           {% if block.settings.block_title_text != blank %}
+                           <h2 class="h1 slideshow-with-text__title">{{ block.settings.block_title_text }} </h2>
+                           {% endif %}
+                           {% if  block.settings.block_button_text != blank %}
+                           <a class="slideshow-with-text__button-{{ block.id }} button"
+                              href=" {{ block.settings.button_link }}"
+                              >
+                              <h2 class="h2 slideshow-with-text__button">{{ block.settings.block_button_text }}</h2>
+                           </a>
+                           {% endif %}
+                        </div>
+                     </div>
+                  </li>
+                  {% else %}
+                  {% for i in (1..3) %}
+                  <li class="splide__slide">
+                     {{ 'collection-' | append: i | placeholder_svg_tag }}
+                  </li>
+                  {% endfor %}
+                  {% endfor %}
+               </ul>
+            </div>
+         </section>
+      </slide-slider>
+   </div>
 </div>
 
 {% schema %}
 {
   "name": "Slideshow With Text",
   "settings": [
+    {
+      "type": "header",
+      "content": "Slider Options"
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "Enable Autoplay",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_pagination",
+      "label": "Show Pagination Dots",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "autoplay_duration",
+      "min": 1000,
+      "max": 9000,
+      "step": 1000,
+      "unit": "ms",
+      "label": "Autoplay Duration",
+      "default": 5000
+    },
     {
       "type": "header",
       "content": "Section padding"
@@ -117,32 +144,6 @@
       "unit": "px",
       "label": "Padding bottom",
       "default": 36
-    },
-    {
-      "type": "header",
-      "content": "Slider Options"
-    },
-    {
-      "type": "checkbox",
-      "id": "autoplay",
-      "label": "Autoplay",
-      "default": true
-    },
-    {
-      "type": "checkbox",
-      "id": "show_pagination",
-      "label": "Show Pagination",
-      "default": true
-    },
-    {
-      "type": "range",
-      "id": "autoplay_duration",
-      "min": 1000,
-      "max": 9000,
-      "step": 1000,
-      "unit": "ms",
-      "label": "Autoplay Duration",
-      "default": 5000
     }
   ],
   "blocks": [
@@ -170,8 +171,8 @@
         },
         {
           "type": "richtext",
-          "id": "block_description_text",
-          "label": "Description",
+          "id": "block_title_text",
+          "label": "Title",
           "default": "<p>Elevate your wardrobe with our limited-time fashion offer!</p>"
         },
         {

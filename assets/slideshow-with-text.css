@@ -13,25 +13,14 @@
 .slideshow-with-text__textContent-inner {
   width: 50%;
 }
-
-.slideshow-with-text__textContent-desc {
+.slideshow-with-text__title p{
+  margin: 0;
+}
+.slideshow-with-text__title {
   font-weight: 600;
   font-size: 40px;
   color: white;
-}
-.bnr_caption {
-  padding: 0;
-  font-size: 14px;
-}
-.bnr_caption.out-text {
-  border: 1px solid white;
-  border-radius: 31px;
-  padding: 0 13px 0 30px;
-  display: inline-block;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  vertical-align: middle;
-  word-break: break-word;
+  margin: 15px 0px 30px 0px;
 }
 
 .splide__wrapper {
@@ -50,7 +39,7 @@
   transform: unset;
   background: none;
   cursor: pointer;
-  left: 40%;
+  left: 43%;
 }
 .slideshow-with-text .splide__arrows .splide__arrow--prev svg {
   fill: white;
@@ -64,37 +53,55 @@
   transform: unset;
   background: none;
   cursor: pointer;
-  right: 40%;
+  right: 43%;
 }
 
-.slideshow-with-text__textContent-desc a{
+.slideshow-with-text__title a {
   text-decoration: none;
-  color:inherit;
-  
+  color: inherit;
 }
-.slideshow-with-text__textContent-desc{
-  text-decoration: none;
-  color:inherit;
-}
-
-
-.slideshow-with-text__textContent-desc a::before {
+.slideshow-with-text__title a::before {
   content: "";
   position: absolute;
   width: 0;
   height: 2px;
   bottom: 0;
   left: 0;
-  color: red;
-  border-bottom: red;
+  background-color: red;
   transition: width 0.3s ease;
 }
 
-.slideshow-with-text__textContent-desc a:hover {
-  border-bottom: red;
+.slideshow-with-text__title a:hover {
   color: red;
 }
 
-.slideshow-with-text__textContent-desc a:hover::before {
-  width: 100%; 
+.slideshow-with-text__title a:hover::before {
+  width: 100%;
+}
+
+@media only screen and (max-width: 750px) {
+  .slideshow-with-text__title {
+    font-size: 26px;
+  }
+  .slideshow-with-text__textContent-inner {
+    width: 100%;
+  }
+  .splide__wrapper-image {
+    position: relative;
+    padding-bottom: 100%;
+  }
+  .splide__wrapper-image img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .slideshow-with-text .splide__arrows .splide__arrow--prev {
+    left: 30%;
+  }
+  .slideshow-with-text .splide__arrows .splide__arrow--next {
+    right: 30%;
+  }
 }

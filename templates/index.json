@@ -8,7 +8,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/1.webp",
             "block_badge_text": "Trendy Classics",
-            "block_description_text": "<p>Elevate your wardrobe with our <a href=\"\/collections\/all\" title=\"All products\">limited-time<\/a> fashion offer!<\/p>",
+            "block_title_text": "<p>Elevate your wardrobe with our <a href=\"\/collections\/all\" title=\"All products\">limited-time<\/a> fashion offer!<\/p>",
             "block_button_text": "Shop Now",
             "button_color_text": "#000000",
             "button_bg_color": "#ffffff",
@@ -23,7 +23,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/4.webp",
             "block_badge_text": "Trendy Classics",
-            "block_description_text": "<p>Elevate your wardrobe with our limited-time fashion offer!<\/p>",
+            "block_title_text": "<p>Elevate your wardrobe with our limited-time fashion offer!<\/p>",
             "block_button_text": "Shop Now",
             "button_color_text": "#000000",
             "button_bg_color": "#ffffff",
@@ -38,7 +38,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/3.webp",
             "block_badge_text": "Modern Elegance",
-            "block_description_text": "<p>Step into the World of Style with the Latest Fashion Trends Unveiled!<\/p>",
+            "block_title_text": "<p>Elevate your wardrobe with our limited-time fashion offer!<\/p>",
             "block_button_text": "Explore More",
             "button_color_text": "#000000",
             "button_bg_color": "#ffffff",
@@ -55,15 +55,29 @@
         "slider_elements_JqF6G7"
       ],
       "settings": {
-        "padding_top": 0,
-        "padding_bottom": 36,
         "autoplay": true,
         "show_pagination": true,
-        "autoplay_duration": 3000
+        "autoplay_duration": 3000,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom_rich_text_zpWHYN": {
+      "type": "custom-rich-text",
+      "settings": {
+        "subtitle": "What You Wear",
+        "title": "<p>Fashion EmergesAs A Universal Language<\/p>",
+        "button_text": "Explore More",
+        "button_color_text": "#ffffff",
+        "button_bg_color": "#dd1d1d",
+        "button_link": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
-    "slideshow_with_text_JUVc4f"
+    "slideshow_with_text_JUVc4f",
+    "custom_rich_text_zpWHYN"
   ]
 }
