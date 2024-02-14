@@ -65,7 +65,14 @@
     "custom_rich_text_MhyHGW": {
       "type": "custom-rich-text",
       "settings": {
+        "pre_heading": "",
+        "pre_heading_color": "#fff",
+        "heading_text": "<p>Heading<\/p>",
+        "heading_text_color": "#ffffff",
+        "button_label": "Explore More",
         "button_link": "",
+        "button_background": "",
+        "button_color": "",
         "padding_top": 60,
         "padding_bottom": 40
       }
