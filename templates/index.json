@@ -62,22 +62,70 @@
         "padding_bottom": 0
       }
     },
-    "custom_rich_text_zpWHYN": {
+    "custom_rich_text_MhyHGW": {
       "type": "custom-rich-text",
       "settings": {
-        "subtitle": "What You Wear",
-        "title": "<p>Fashion EmergesAs A Universal Language<\/p>",
-        "button_text": "Explore More",
-        "button_color_text": "#ffffff",
-        "button_bg_color": "#dd1d1d",
+        "pre_heading": "What You Wear",
+        "pre_heading_color": "#000000",
+        "heading_text": "<p>Fashion Emerges<\/p><p> as a Universal <a href=\"\/collections\/all\" title=\"All products\">Language<\/a><\/p>",
+        "heading_text_color": "#000000",
+        "button_label": "Explore More",
         "button_link": "",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "button_background": "#d03c3f",
+        "button_color": "#ffffff",
+        "padding_top": 60,
+        "padding_bottom": 40
+      }
+    },
+    "custom_image_grid_LDcYjY": {
+      "type": "custom-image-grid",
+      "blocks": {
+        "grid_items_3yDTj6": {
+          "type": "grid-items",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4265.webp",
+            "tagline_text": "Tag Goes Here",
+            "tagline_color": "#ffffff",
+            "heading_text": "<p>Women's Clothing Collection Explore<\/p>",
+            "heading_text_color": "#ffffff",
+            "button_label": "Explore More",
+            "button_link": "shopify:\/\/collections",
+            "button_background": "#ffffff",
+            "button_color": "#000000",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "grid_items_i9NEC3": {
+          "type": "grid-items",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4264.webp",
+            "tagline_text": "Tag Goes Here",
+            "tagline_color": "#ffffff",
+            "heading_text": "<p>Women's Sustainable Style Hub<\/p>",
+            "heading_text_color": "#ffffff",
+            "button_label": "Explore More",
+            "button_link": "shopify:\/\/collections",
+            "button_background": "#ffffff",
+            "button_color": "#000000",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "grid_items_3yDTj6",
+        "grid_items_i9NEC3"
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },
   "order": [
     "slideshow_with_text_JUVc4f",
-    "custom_rich_text_zpWHYN"
+    "custom_rich_text_MhyHGW",
+    "custom_image_grid_LDcYjY"
   ]
 }

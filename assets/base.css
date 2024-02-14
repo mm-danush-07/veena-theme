@@ -3524,6 +3524,7 @@ details-disclosure > details {
 .bnr_caption {
   padding: 0;
   font-size: 14px;
+  margin-bottom: 10px
 }
 .bnr_caption.out-text {
   border: 1px solid white;
@@ -3535,6 +3536,21 @@ details-disclosure > details {
   vertical-align: middle;
   word-break: break-word;
 }
+
+.hxl{
+  font-size: 52px;
+}
+.hl{
+  font-size: 32px;
+}
 .bnr_caption.out-text li{
   list-style: circle;
+  color: white;
+}
+.custom-border-radius{
+  border-radius: 31px;
+}
+
+.richtext p{
+  margin: 0;
 }
