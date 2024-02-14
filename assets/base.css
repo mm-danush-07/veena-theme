@@ -3602,7 +3602,7 @@ details-disclosure > details {
 .bnr_caption {
   padding: 0;
   font-size: 14px;
-  margin-bottom: 10px
+  margin-bottom: 10px;
 }
 .bnr_caption.out-text {
   border: 1px solid white;
@@ -3614,30 +3614,28 @@ details-disclosure > details {
   vertical-align: middle;
   word-break: break-word;
 }
-<<<<<<< HEAD
 
-.hxl{
+.hxl {
   font-size: 52px;
 }
-.hl{
+.hl {
   font-size: 32px;
 }
-.bnr_caption.out-text li{
+.bnr_caption.out-text li {
   list-style: circle;
   color: white;
 }
-.custom-border-radius{
+.custom-border-radius {
   border-radius: 31px;
 }
 
-.richtext p{
+.richtext p {
   margin: 0;
 }
-=======
+
 .bnr_caption.out-text li {
   list-style: circle;
 }
 .custom-border-radius {
   border-radius: 31px;
 }
->>>>>>> 94970ed0be88f0d5f88ab3f3448fa69c0346f837
