@@ -65,14 +65,7 @@
     "custom_rich_text_MhyHGW": {
       "type": "custom-rich-text",
       "settings": {
-        "pre_heading": "What You Wear",
-        "pre_heading_color": "#000000",
-        "heading_text": "<p>Fashion Emerges<\/p><p> as a Universal <a href=\"\/collections\/all\" title=\"All products\">Language<\/a><\/p>",
-        "heading_text_color": "#000000",
-        "button_label": "Explore More",
         "button_link": "",
-        "button_background": "#d03c3f",
-        "button_color": "#ffffff",
         "padding_top": 60,
         "padding_bottom": 40
       }
