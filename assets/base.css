@@ -333,7 +333,7 @@ h2,
 }
 h3,
 .h3 {
-  font-size: calc(var(--font-heading-scale) * 1.7rem);
+  font-size: calc(var(--font-heading-scale) * 2rem);
 }
 @media only screen and (min-width: 768px) {
   h3,
@@ -3599,6 +3599,10 @@ details-disclosure > details {
     --border-offset: 0px; /* Prevent the border from growing on buttons when this effect is on. */
   }
 }
+
+.bold {
+  font-weight: 600;
+}
 .bnr_caption {
   padding: 0;
   font-size: 14px;
@@ -3638,4 +3642,14 @@ details-disclosure > details {
 }
 .custom-border-radius {
   border-radius: 31px;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: start;
+}
+.text-right {
+  text-align: start;
 }
