@@ -13,9 +13,9 @@
   }
 {% endstyle %}
 
-<div class="custom-usp padding-{{ section.id }}">
+<div class="custom-usp padding-{{ section.id }} color-{{ section.settings.color_scheme }}">
   <div class="page-width">
-    <div class="grid grid--1-col grid--4-col-desktop grid--4-col-tablet color-{{ section.settings.color_scheme }}">
+    <div class="grid grid--1-col grid--4-col-desktop grid--4-col-tablet">
       {% if section.blocks.size > 0 %}
         {% for block in section.blocks %}
           <div class="grid__item custom-usp__block">
