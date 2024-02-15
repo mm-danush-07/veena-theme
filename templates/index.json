@@ -173,12 +173,75 @@
         "padding_top": 40,
         "padding_bottom": 40
       }
+    },
+    "lookbook_U9zrfn": {
+      "type": "lookbook",
+      "blocks": {
+        "lookbook_content_m8HnEH": {
+          "type": "lookbook-content",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_86583ec4-835c-45cd-999c-b7e8b1bdc86e.webp",
+            "product_one": "carhartt-coat-black",
+            "left_position_one": 58,
+            "top_position_one": 28,
+            "product_two": "gritty-jackson-black-forest",
+            "left_position_two": 43,
+            "top_position_two": 68,
+            "block_title_text": "Women's Winter Clothes",
+            "block_description_text": "<p>Welcome the season in style with our Women's Winter Clothes Collection – where warmth meets sophistication<\/p>",
+            "block_button_text": "Discover More",
+            "block_button_link": ""
+          }
+        },
+        "lookbook_content_bfW7eG": {
+          "type": "lookbook-content",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_a11b3061-4da9-4c80-ad4a-2ed8e9b0280f.webp",
+            "product_one": "chore-coat-brown-duck",
+            "left_position_one": 43,
+            "top_position_one": 30,
+            "product_two": "lean-dean-plain-stone",
+            "left_position_two": 17,
+            "top_position_two": 65,
+            "block_title_text": "Women's Winter Clothes",
+            "block_description_text": "<p>Welcome the season in style with our Women's Winter Clothes Collection – where warmth meets sophistication<\/p>",
+            "block_button_text": "Discover More",
+            "block_button_link": ""
+          }
+        },
+        "lookbook_content_gCRAbQ": {
+          "type": "lookbook-content",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3_e98fbf29-76ef-498a-837a-517c37dafb8d.webp",
+            "product_one": "black-stripe-spring-oxford-shirt",
+            "left_position_one": 59,
+            "top_position_one": 24,
+            "product_two": "lean-dean-plain-stone",
+            "left_position_two": 39,
+            "top_position_two": 73,
+            "block_title_text": "Women's Winter Clothes",
+            "block_description_text": "<p>Welcome the season in style with our Women's Winter Clothes Collection – where warmth meets sophistication<\/p>",
+            "block_button_text": "Discover More",
+            "block_button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "lookbook_content_m8HnEH",
+        "lookbook_content_bfW7eG",
+        "lookbook_content_gCRAbQ"
+      ],
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "slideshow_with_text_JUVc4f",
     "custom_rich_text_MhyHGW",
     "custom_image_grid_LDcYjY",
-    "custom_usp_dCfdgh"
+    "custom_usp_dCfdgh",
+    "lookbook_U9zrfn"
   ]
 }
