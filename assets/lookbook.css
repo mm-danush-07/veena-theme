@@ -11,14 +11,19 @@
   border-radius: 50%;
   background-color: white;
 }
-.lookbook__content {
-  margin-top: 15px;
-}
+.lookbook__content,
 .lookbook__content-button {
   margin-top: 15px;
 }
+
 .lookbook__product-image img {
   border-radius: 10px;
+}
+.custom-border-radius-sm {
+  border-radius: 16px;
+}
+.lookbook__product-description-title:hover {
+  color: red;
 }
 .lookbook__product {
   background: white;
@@ -57,6 +62,41 @@
   margin-left: 25px;
 }
 
+.product-card__compareprice {
+  font-size: 14px;
+  font-weight: 400;
+}
+.product-card__price {
+  font-size: 15px;
+  font-weight: 600;
+}
 .lookbook__product-description-title {
   font-size: 14px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 750px) {
+  .lookbook__product-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .lookbook__product {
+    width: 98px;
+    top: 30%;
+  }
+  .lookbook__product-image {
+    width: 100%;
+  }
+  .product-card__compareprice {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .lookbook__product-description-title,
+  .product-card__price {
+    font-size: 13px;
+    font-weight: 600;
+  }
 }
