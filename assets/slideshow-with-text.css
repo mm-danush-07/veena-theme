@@ -13,7 +13,7 @@
 .slideshow-with-text__textContent-inner {
   width: 50%;
 }
-.slideshow-with-text__title p{
+.slideshow-with-text__title p {
   margin: 0;
 }
 .slideshow-with-text__title {
@@ -63,12 +63,13 @@
 .slideshow-with-text__title a::before {
   content: "";
   position: absolute;
-  width: 0;
+  width: 100%;
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: red;
-  transition: width 0.3s ease;
+  background: linear-gradient(to right, transparent 50%, #d03c3f 50%);
+  background-size: 200% 100%;
+  transition: background-position 0.3s ease-in-out;
 }
 
 .slideshow-with-text__title a:hover {
