@@ -42,18 +42,18 @@
                     <div class="grid__item custom-border-radius custom-image-grid__wrapper">
                         {% if block.settings.image != blank %}
                             <div class="custom-image-grid__image-container">
-                            {% render 'responsive-picture',
-                                class: 'media media--landscape custom-border-radius custom-image-grid__image',
-                                desktopImage: block.settings.image,
-                                mobileImage: block.settings.mobile_image
-                            %}
+                                {% render 'responsive-picture',
+                                    class: 'media media--landscape custom-border-radius custom-image-grid__image',
+                                    desktopImage: block.settings.image,
+                                    mobileImage: block.settings.mobile_image
+                                %}
                             </div>
                         {% else %}
                             <div class="media media--landscape custom-border-radius">
                                 {{ 'detailed-apparel-1' | placeholder_svg_tag }}
                             </div>
                         {% endif %}
-                        <div class="custom-image-grid__text custom-image-grid__text-alignment-{{ block.id}}">
+                        <div class="custom-image-grid__text custom-image-grid__text-alignment-{{ block.id }}">
                             <div class="custom-image-grid__text-inner">
                                 {% if block.settings.tagline_text  != blank %}
                                     <ul class="bnr_caption inline-richtext out-text">
@@ -64,14 +64,17 @@
                                     <h3 class="h1 hl richtext custom-image-grid__heading custom-image-grid__heading-{{ block.id }} "> {{ block.settings.heading_text }}</h3>
                                 {% endif %}
                                 {% if block.settings.button_label != blank %}
-                                    <a
-                                    class="button custom-image-grid__button custom-image-grid__button-{{ block.id }}"
-                                    href="{{ block.settings.button_link }}"
-                                    >
-                                    {{ block.settings.button_label }}
+                                    <a class="button custom-image-grid__button custom-image-grid__button-{{ block.id }}" href="{{ block.settings.button_link }}">
+                                        {{ block.settings.button_label }}
                                     </a>
                                 {% endif %}
                             </div>
+                        </div>
+                    </div>
+                {% else %}
+                    <div class="grid__item custom-border-radius custom-image-grid__wrapper">
+                        <div class="custom-image-grid__image-container">
+                            {{ 'image' | placeholder_svg_tag }}
                         </div>
                     </div>
                 {% endif %}
