@@ -90,7 +90,8 @@
   .lookbook__product-image {
     width: 100%;
   }
-  .product-card__compareprice {
+  .product-card__compareprice,
+  .product-card__price {
     font-size: 13px;
     font-weight: 400;
   }
